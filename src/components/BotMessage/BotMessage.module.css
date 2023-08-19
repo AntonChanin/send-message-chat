@@ -1,0 +1,28 @@
+.message {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    margin: 18px auto 18px 0;
+
+}
+
+.message-text {
+    background-color: #2276F533;
+    border-radius: 28px;
+    color: #000000;
+    width: calc(100% - 13px);
+    text-align: start;
+    padding: 12px 20px;
+    margin-left: 13px;
+}
+
+.avatar {
+    background-color: #007AFE;
+    border-radius: 20px;
+    min-width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

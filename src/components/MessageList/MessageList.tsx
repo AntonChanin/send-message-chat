@@ -1,5 +1,9 @@
 import React from 'react';
 
+import './MessageList.css';
+import Message from '../Message';
+import BotMessage from '../BotMessage';
+
 type Props = {
     messages: {
         id: string;
@@ -7,18 +11,16 @@ type Props = {
         text: string;
     }[];
     roomId: string;
+    userId: string;
 }
 
 function MessageList(props:Props) {
-    const { messages } = props;
+    const { messages, userId } = props;
     return  (
         <ul className="message-list">
             {messages.map((message, index) => {
                 return (
-                    <li  key={message.id} className="message">
-                    <div>{message.senderId}</div>
-                    <div>{message.text}</div>
-                    </li>
+                    message.senderId === userId ? <Message {...message} /> : <BotMessage {...message} />
                 )
             })}
         </ul>

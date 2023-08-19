@@ -1,0 +1,25 @@
+.send-message-form {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.send-message-input {
+    width: 100%;
+    padding: 20px 12px;
+}
+
+.send-message-button {
+    border-radius: 50%;
+    background-color: #007AFE;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inherit;
+    align-items: inherit;
+    justify-content: center;
+}

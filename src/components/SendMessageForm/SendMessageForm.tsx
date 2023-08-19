@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import './SendMessageForm.css';
+import Send from '../Icons/Send';
+
 type Props = {
     sendMessage(message: string): void;
 }
@@ -27,7 +30,9 @@ function SendMessageForm(props:Props) {
                 value={message}
                 placeholder="Type your message and hit ENTER"
                 type="text"
+                className="send-message-input"
             />
+            <button className="send-message-button"><Send /></button>
         </form>
     );
 };

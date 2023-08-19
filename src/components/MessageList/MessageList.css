@@ -1,0 +1,9 @@
+.message-list {
+    max-height: 623px;
+    height: calc(100% - 204px);
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin: 0;
+    padding: 36px 19px;
+    overflow-y: auto;
+}
