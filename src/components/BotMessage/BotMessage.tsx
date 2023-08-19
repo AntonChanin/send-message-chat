@@ -19,8 +19,7 @@ function Message(props:Props) {
     return (
         <li  key={id} className={styles.message}>
             <div className={styles.avatar}><BotIcon /></div>
-            <div className={`${styles['message-text']} out-${index}`}>
-            </div>
+            <div className={`${styles['message-text']} out-${index}`} />
         </li>
     )
 }
