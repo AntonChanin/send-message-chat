@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Message.css';
+import styles from './Message.module.css';
 
 type Props = {
     id: string;
@@ -12,11 +12,11 @@ function Message(props:Props) {
     const { id, senderId, text } = props;
     return (
         
-        <li  key={id} className="message">
-            <div className="message-text">
+        <li  key={id} className={styles.message}>
+            <div className={styles.messageText}>
                 {text}
             </div>
-            <div className="avatar">{senderId[0]}</div>
+            <div className={styles.avatar}>{senderId[0]}</div>
         </li>
     )
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './Title.css';
+import styles from './Title.module.css';
 
 function Title() {
-    return <div className="title">
-        <h1 className="primary">Bot Chat</h1>
-        <p className="secondary">AI-based service</p>
+    return <div className={styles.title}>
+        <h1 className={styles.primary}>Bot Chat</h1>
+        <p className={styles.secondary}>AI-based service</p>
     </ div>
 }
 

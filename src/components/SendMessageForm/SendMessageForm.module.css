@@ -1,4 +1,4 @@
-.send-message-form {
+.sendMessageForm {
     background-color: #ffffff;
     border-radius: 16px;
     width: 100%;
@@ -8,12 +8,12 @@
     padding: 0 16px;
 }
 
-.send-message-input {
+.sendMessageInput {
     width: 100%;
     padding: 20px 12px;
 }
 
-.send-message-button {
+.sendMessageButton {
     border-radius: 50%;
     background-color: #007AFE;
     width: 40px;

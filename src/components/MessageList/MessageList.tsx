@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './MessageList.css';
 import Message from '../Message';
 import BotMessage from '../BotMessage';
+import styles from './MessageList.module.css';
 
 type Props = {
     messages: {
@@ -17,7 +17,7 @@ type Props = {
 function MessageList(props:Props) {
     const { messages, userId } = props;
     return  (
-        <ul className="message-list">
+        <ul className={styles.messageList}>
             {messages.map((message, index) => {
                 return (
                     message.senderId === userId

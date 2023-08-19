@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-import './SendMessageForm.css';
 import Send from '../Icons/Send';
+
+import styles from  './SendMessageForm.module.css';
 
 type Props = {
     sendMessage(message: string): void;
@@ -24,15 +25,15 @@ function SendMessageForm(props:Props) {
     return  (
         <form
             onSubmit={handleSubmit}
-            className="send-message-form">
+            className={styles.sendMessageForm}>
             <input
                 onChange={handleChange}
                 value={message}
                 placeholder="Type your message and hit ENTER"
                 type="text"
-                className="send-message-input"
+                className={styles.sendMessageInput}
             />
-            <button className="send-message-button" type="submit"><Send /></button>
+            <button className={styles.sendMessageButton} type="submit"><Send /></button>
         </form>
     );
 };

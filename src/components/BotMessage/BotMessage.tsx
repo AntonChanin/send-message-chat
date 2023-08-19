@@ -13,13 +13,13 @@ type Props = {
 }
 
 function Message(props:Props) {
-    const { id, text, index } = props;
-    useEffect(() => typing(text, `.out-${index}`), []);
+    const { id, text, senderId, index } = props;
+    useEffect(() => typing(text, `.${senderId}-${index}`), []);
 
     return (
         <li  key={id} className={styles.message}>
             <div className={styles.avatar}><BotIcon /></div>
-            <div className={`${styles['message-text']} out-${index}`} />
+            <div className={`${styles.messageText} ${senderId}-${index}`} />
         </li>
     )
 }
