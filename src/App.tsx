@@ -9,7 +9,7 @@ import './App.css'
 
 const userConfig = {
   name: 'Torero',
-  id: uuid(),
+  id: '0',
 }
 
 function App() {
