@@ -20,7 +20,7 @@ function MessageList(props:Props) {
         <ul className="message-list">
             {messages.map((message, index) => {
                 return (
-                    message.senderId === userId ? <Message {...message} /> : <BotMessage {...message} />
+                    message.senderId === userId ? <Message key={message.id} {...message} /> : <BotMessage key={message.id}  {...message} />
                 )
             })}
         </ul>

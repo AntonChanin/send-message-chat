@@ -32,7 +32,7 @@ function SendMessageForm(props:Props) {
                 type="text"
                 className="send-message-input"
             />
-            <button className="send-message-button"><Send /></button>
+            <button className="send-message-button" type="submit"><Send /></button>
         </form>
     );
 };
