@@ -18,11 +18,11 @@ function MessageList(props:Props) {
     const { messages, userId } = props;
     return  (
         <ul className="message-list">
-            {messages.map((message) => {
+            {messages.map((message, index) => {
                 return (
                     message.senderId === userId
                         ? <Message key={message.id} {...message} />
-                        : <BotMessage key={message.id}  {...message} />
+                        : <BotMessage key={message.id}  {...message} index={index} />
                 )
             })}
         </ul>
