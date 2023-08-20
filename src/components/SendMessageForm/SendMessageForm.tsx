@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Send from '../Icons/Send';
 
-import styles from  './SendMessageForm.module.css';
+import styles from  './SendMessageForm.module.scss';
 
 type Props = {
     sendMessage(message: string): void;

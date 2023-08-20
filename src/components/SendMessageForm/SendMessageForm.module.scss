@@ -1,0 +1,29 @@
+@import url(../../variable.scss);
+
+.sendMessage {
+    &Form {
+        background-color: $primaryColor;
+        border-radius: 16px;
+        width: $full;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+    
+    &Input {
+        width: $full;
+        padding: 20px 12px;
+    }
+
+    &Button {
+        border-radius: 50%;
+        background-color: $primaryBackground;
+        width: $avatarSize;
+        height: $avatarSize;
+        padding: 0;
+        display: inherit;
+        align-items: inherit;
+        justify-content: center;
+    }
+}

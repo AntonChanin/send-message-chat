@@ -2,7 +2,8 @@ import React from 'react';
 
 import Message from '../Message';
 import BotMessage from '../BotMessage';
-import styles from './MessageList.module.css';
+
+import styles from './MessageList.module.scss';
 
 type Props = {
     messages: {

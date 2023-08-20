@@ -1,0 +1,29 @@
+@import url(../../variable.scss);
+
+.message {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    margin: 18px auto 18px 0;
+
+    &Text {
+        background-color: $secondaryBackground;
+        border-radius: 28px;
+        color: $secondaryColor;
+        width: calc(100% - 13px);
+        text-align: start;
+        padding: 12px 20px;
+        margin-left: 13px;
+    }
+
+    .avatar {
+        background-color: $avatarBackground;
+        border-radius: 20px;
+        min-width: 40px;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

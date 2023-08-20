@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 
 import BotIcon from '../Icons/Bot';
-
-import styles from './BotMessage.module.css';
 import { typing } from '../../utils/typing';
+
+import styles from './BotMessage.module.scss';
 
 type Props = {
     id: string;
